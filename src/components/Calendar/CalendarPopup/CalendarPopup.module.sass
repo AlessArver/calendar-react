@@ -1,0 +1,24 @@
+@import "~styles/colors"
+@import "~styles/texts"
+
+.CalendarPopup
+    width: 300px
+    padding: 10px
+    background: $color-white
+    border-radius: 8px
+    box-shadow: 0 8px 32px rgba(186, 185, 219, 0.33), 0 8px 20px rgba(186, 185, 219, 0.0794035), 0 8.17584px 8.96712px rgba(186, 185, 219, 0.0337138)
+    z-index: 10
+
+.CalendarPopupHeader
+    margin-bottom: 15px
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+.CalendarPopupClose
+    color: $color-text-secondary
+    cursor: pointer
+
+.CalendarPopupTitle
+    @include text-h4

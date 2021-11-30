@@ -1,0 +1,41 @@
+@import "~styles/colors"
+@import "~styles/texts"
+
+.CalendarHeader
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.CalendarHeaderCol
+  display: flex
+
+.CalendarHeaderMonth
+  margin-right: 10px
+  @include text-h2
+  text-transform: capitalize
+
+.CalendarHeaderRange
+  align-self: end
+  @include text-body-s
+
+.CalendarHeaderArrow
+  width: 30px
+  height: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  background: $color-main
+  border-radius: 50px
+
+.CalendarHeaderArrowIcon
+  color: $color-white
+
+.CalendarHeaderToday
+  margin: 0 8px
+  color: $color-main
+  cursor: pointer
+  @include text-body-s
+
+.CalendarHeaderSwitch
+  margin-left: 8px

@@ -1,0 +1,25 @@
+@import "~styles/colors"
+@import "~styles/spaces"
+
+.Header
+  padding: 0 $space-main-desktop
+  width: calc(100% - #{$space-main-desktop * 2})
+  height: 40px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: $color-main
+ 
+
+.HeaderCol
+  display: flex
+  align-items: center
+
+.HeaderItem
+  margin-right: 15px
+  cursor: pointer
+  text-decoration: none
+  color: $color-white
+
+  &:last-child
+    margin-right: 0

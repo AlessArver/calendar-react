@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "moment/locale/ru";
+import moment from "moment";
 
-function App() {
+import { AppRoutes } from "routes";
+
+moment.updateLocale("ru", {
+  week: { dow: 0 },
+  calendar: {
+    lastDay: "[вчера]",
+    sameDay: "[сегодня]",
+    nextDay: "[завтра]",
+    lastWeek: "[прошлая неделя]",
+    nextWeek: "[следующая неделя]",
+    sameElse: "L",
+  },
+});
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppRoutes />
+    </>
   );
-}
-
-export default App;
+};
