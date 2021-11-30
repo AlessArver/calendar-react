@@ -1,6 +1,6 @@
 ### https://alessarver.github.io/calendar-react/
 
-### Buildcommands
+### Build commands
 
 ```
 yarn start
